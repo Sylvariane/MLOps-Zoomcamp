@@ -1,0 +1,12 @@
+homework/data
+homework/mlruns
+homework/models
+homework/output
+homework/mlflow.db
+
+data
+
+mlruns
+modelsmlflow.db
+.vscode
+.ipynbcheckpoints
