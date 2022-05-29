@@ -65,10 +65,10 @@ def run(data_path, log_top):
 
     # select the model with the lowest test RMSE
     experiment = client.get_experiment_by_name(EXPERIMENT_NAME)
-    #best_run = client.search_runs(experiment_ids=experiment)[0][1]
+    #best_run = client.search_runs(1)
 
     # register the best model
-    mlflow.register_model(model_uri='runs:/45f5444bc89b43a18599ddb6e3f13076/model', name='taxi-nyc-regressor')
+    mlflow.register_model(model_uri=f'runs:/45f5444bc89b43a18599ddb6e3f13076/model', name='taxi-nyc-regressor')
 
 
 if __name__ == '__main__':
